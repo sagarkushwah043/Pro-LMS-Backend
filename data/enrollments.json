@@ -4,5 +4,23 @@
     "userId": "fake-student",
     "courseId": "c_102",
     "createdAt": "2025-08-24T11:36:07.806Z"
+  },
+  {
+    "id": "e_1756047204686",
+    "userId": "fake-student",
+    "courseId": "c_103",
+    "createdAt": "2025-08-24T14:53:24.686Z"
+  },
+  {
+    "id": "e_1756047206540",
+    "userId": "fake-student",
+    "courseId": "c_106",
+    "createdAt": "2025-08-24T14:53:26.540Z"
+  },
+  {
+    "id": "e_1756047208495",
+    "userId": "fake-student",
+    "courseId": "c_105",
+    "createdAt": "2025-08-24T14:53:28.495Z"
   }
 ]
