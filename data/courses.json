@@ -1,0 +1,202 @@
+[
+  {
+    "id": "c_101",
+    "title": "JavaScript Basics",
+    "description": "Learn the fundamentals of JavaScript: variables, functions, loops, and DOM manipulation.",
+    "level": "beginner",
+    "category": "programming",
+    "rating": 4,
+    "createdAt": "2025-07-01T10:00:00Z",
+    "image": "https://www.tutorialrepublic.com/lib/images/javascript-illustration.png"
+  },
+  {
+    "id": "c_102",
+    "title": "React Fundamentals",
+    "description": "Understand React components, state, props, and hooks to build interactive UIs.",
+    "level": "beginner",
+    "category": "web development",
+    "rating": 5,
+    "createdAt": "2025-07-03T12:00:00Z",
+    "image": "https://www.patterns.dev/img/reactjs/react-logo@3x.svg"
+  },
+  {
+    "id": "c_103",
+    "title": "Node.js & Express",
+    "description": "Build REST APIs with Node.js and Express, including routing and middleware.",
+    "level": "intermediate",
+    "category": "backend",
+    "rating": 4,
+    "createdAt": "2025-07-05T09:00:00Z",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1-ypy_UY-d00JJJH-de0LF-4hZywM0Yv-eA&s"
+  },
+  {
+    "id": "c_104",
+    "title": "Advanced CSS",
+    "description": "Master Flexbox, Grid, animations, and responsive design techniques.",
+    "level": "advanced",
+    "category": "design",
+    "rating": 3,
+    "createdAt": "2025-07-07T14:00:00Z",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgq3ySvdsfVDPeTC_Ep4mrnpifaii2-PQtRQ&s"
+  },
+  {
+    "id": "c_105",
+    "title": "MongoDB Essentials",
+    "description": "Get started with MongoDB: collections, documents, queries, and schema design.",
+    "level": "intermediate",
+    "category": "database",
+    "rating": 5,
+    "createdAt": "2025-07-10T08:00:00Z",
+    "image": "https://s3.amazonaws.com/info-mongodb-com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png"
+  },
+  {
+    "id": "c_106",
+    "title": "Python for Beginners",
+    "description": "Learn Python basics: syntax, functions, and working with files.",
+    "level": "beginner",
+    "category": "programming",
+    "rating": 5,
+    "createdAt": "2025-07-11T10:00:00Z",
+    "image": "https://webandcrafts.com/_next/image?url=https%3A%2F%2Fadmin.wac.co%2Fuploads%2FFeatures_Of_Python_1_f4ccd6d9f7.jpg&w=4500&q=90"
+  },
+  {
+    "id": "c_107",
+    "title": "Data Structures & Algorithms",
+    "description": "Master arrays, linked lists, trees, graphs, sorting, and searching algorithms.",
+    "level": "advanced",
+    "category": "computer science",
+    "rating": 4,
+    "createdAt": "2025-07-12T16:00:00Z",
+    "image": "https://miro.medium.com/1*4ZcW5tSdizlbtDQyVpRTuA.jpeg"
+  },
+  {
+    "id": "c_108",
+    "title": "Full-Stack MERN Development",
+    "description": "End-to-end MERN stack training: React, Node, Express, MongoDB.",
+    "level": "advanced",
+    "category": "web development",
+    "rating": 5,
+    "createdAt": "2025-07-13T11:00:00Z",
+    "image": "https://grras.com/files/sgbaxnrabaysf8ugrxu6/blog_image_mern_stck.jpeg?s=940x350"
+  },
+  {
+    "id": "c_109",
+    "title": "UI/UX Design Principles",
+    "description": "Learn wireframing, prototyping, and design best practices.",
+    "level": "beginner",
+    "category": "design",
+    "rating": 4,
+    "createdAt": "2025-07-14T13:00:00Z",
+    "image": "https://view.subpage.app/app/company/C532b8873cc5442e2b1f2265b77a7d7dc/domain/MTiT0jFlGh/page/Ma9aQb2DGh/article/Mf8af4eaca3f9b166f045b71fe61100671698987694871/hero/M3a7968025eb1d23e85d85e2d960449b91699239359648.webp"
+  },
+  {
+    "id": "c_110",
+    "title": "SQL & Relational Databases",
+    "description": "Understand SQL queries, joins, and relational database design.",
+    "level": "intermediate",
+    "category": "database",
+    "rating": 5,
+    "createdAt": "2025-07-15T17:00:00Z",
+    "image": "https://curator-production.s3.us.cloud-object-storage.appdomain.cloud/uploads/md5-b2bb7c024cf1568c1a838db057f0cb3d-course_card.png"
+  },
+  {
+    "id": "c_111",
+    "title": "TypeScript for React",
+    "description": "Enhance React projects with TypeScript typing, interfaces, and generics.",
+    "level": "intermediate",
+    "category": "programming",
+    "rating": 4,
+    "createdAt": "2025-07-16T09:00:00Z",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/1*CHH1P0NwJfZzXXHo-VUzOA.png"
+  },
+  {
+    "id": "c_112",
+    "title": "Docker Fundamentals",
+    "description": "Learn containerization basics with Docker and Docker Compose.",
+    "level": "beginner",
+    "category": "devops",
+    "rating": 3,
+    "createdAt": "2025-07-17T19:00:00Z",
+    "image": "https://www.whizlabs.com/blog/wp-content/uploads/2019/08/docker-fundamentals.png"
+  },
+  {
+    "id": "c_113",
+    "title": "Kubernetes Basics",
+    "description": "Orchestrate containers using Kubernetes deployments, pods, and services.",
+    "level": "advanced",
+    "category": "devops",
+    "rating": 5,
+    "createdAt": "2025-07-18T20:00:00Z",
+    "image": "https://sunteco.vn/wp-content/uploads/2025/07/trien-khai-kubernetes-1.jpg"
+  },
+  {
+    "id": "c_114",
+    "title": "Machine Learning with Python",
+    "description": "Introduction to supervised and unsupervised ML models with scikit-learn.",
+    "level": "intermediate",
+    "category": "data science",
+    "rating": 5,
+    "createdAt": "2025-07-19T21:00:00Z",
+    "image": "https://www.nexsoftsys.com/articles/images/machine-learning-python.jpg"
+  },
+  {
+    "id": "c_115",
+    "title": "Deep Learning with TensorFlow",
+    "description": "Neural networks, CNNs, and training models using TensorFlow.",
+    "level": "advanced",
+    "category": "data science",
+    "rating": 4,
+    "createdAt": "2025-07-20T22:00:00Z",
+    "image": "https://blog.paperspace.com/content/images/size/w1050/2021/01/0_szgpfwmBY_CuZwP8-2.png"
+  },
+  {
+    "id": "c_116",
+    "title": "Cybersecurity Fundamentals",
+    "description": "Learn ethical hacking, security tools, and best practices.",
+    "level": "beginner",
+    "category": "security",
+    "rating": 4,
+    "createdAt": "2025-07-21T18:00:00Z",
+    "image": "https://cdn.educba.com/academy/wp-content/uploads/2019/10/Cybersecurity-Fundamentals.png"
+  },
+  {
+    "id": "c_117",
+    "title": "Cloud Computing with AWS",
+    "description": "Understand EC2, S3, Lambda, and core AWS services.",
+    "level": "intermediate",
+    "category": "cloud",
+    "rating": 5,
+    "createdAt": "2025-07-22T10:00:00Z",
+    "image": "https://images.squarespace-cdn.com/content/v1/60cfd646701da4034512a1c5/1654217981309-RTSZMBJWA9YJ5V32UN8R/AWS-Cloud.png"
+  },
+  {
+    "id": "c_118",
+    "title": "Agile & Scrum Methodologies",
+    "description": "Learn Agile principles and Scrum framework for project management.",
+    "level": "beginner",
+    "category": "management",
+    "rating": 3,
+    "createdAt": "2025-07-23T12:00:00Z",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvat5-W4YoiZlN7zJgqAgPMolXTEmu_9J1tg&s"
+  },
+  {
+    "id": "c_119",
+    "title": "Next.js Full Guide",
+    "description": "Server-side rendering, static site generation, and API routes in Next.js.",
+    "level": "intermediate",
+    "category": "web development",
+    "rating": 5,
+    "createdAt": "2025-07-24T15:00:00Z",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWPE22E4GN3ctPStJrzFgHmtvu6S87f2M3mg&s"
+  },
+  {
+    "id": "c_120",
+    "title": "Mobile Development with React Native",
+    "description": "Build cross-platform mobile apps using React Native and Expo.",
+    "level": "advanced",
+    "category": "mobile",
+    "rating": 4,
+    "createdAt": "2025-07-25T16:00:00Z",
+    "image": "https://www.aceinfoway.com/blog/wp-content/uploads/2020/04/Why-should-you-choose-React-Native-for-your-next-Mobile-Development-Project.jpg"
+  }
+]

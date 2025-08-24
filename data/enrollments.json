@@ -1,0 +1,14 @@
+[
+  {
+    "id": "e_1756013623107",
+    "userId": "fake-student",
+    "courseId": "c_101",
+    "createdAt": "2025-08-24T05:33:43.107Z"
+  },
+  {
+    "id": "e_1756021819805",
+    "userId": "fake-student",
+    "courseId": "c_102",
+    "createdAt": "2025-08-24T07:50:19.805Z"
+  }
+]
