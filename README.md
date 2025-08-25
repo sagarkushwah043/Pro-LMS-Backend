@@ -1,122 +1,172 @@
-# 🖥️ Mini LMS Backend (Node + Express)
+# Pro LMS — Frontend (Vite + React + Tailwind)
 
-This is the backend API for **Mini LMS: Course Catalog + Enrollment (MERN-lite)**.  
-It provides REST endpoints for browsing courses and managing enrollments.  
-Data is stored in local JSON files (`courses.json`, `enrollments.json`) for simplicity.
+A fast, modern Learning Management System (LMS) frontend built with **Vite + React** and styled with **Tailwind CSS**.
+
+[![Vite](https://img.shields.io/badge/Vite-frontend-blue)]()
+[![React](https://img.shields.io/badge/React-18+-61DAFB)]()
+[![Tailwind](https://img.shields.io/badge/TailwindCSS-3.x-38B2AC)]()
+
+## 🚀 Live Demo
+[Pro -LMS ](https://pro-lms-frontend.vercel.app)
+---
+
+## 📦 Tech Stack
+- **Frontend:** React (Vite), React Router
+- **Styling:** Tailwind CSS, Dark/Light Theme
+- **State:** Local state/hooks (and optional Redux Toolkit)
+- **HTTP:** axios/fetch (configurable API base URL)
 
 ---
 
-## 🚀 Features
-- Node.js + Express API
-- Courses API with pagination, search, filters, and sorting
-- Enrollment API (enroll / unenroll)
-- Middleware for token authentication
-- Error handling middleware (400/401/404/409 responses)
-- JSON file data layer (atomic read/write)
+## ✨ Features
+- Course listing, details, enroll/unenroll
+- Dark/Light theme toggle
+- Responsive UI with clean cards and grids
+- Client-side routing (SPA)
+- API base URL via environment variable
 
 ---
 
-## 📂 Folder Structure
+## 🗂️ Project Structure (frontend only)
+pro-lms-frontend/
+├─ public/
+├─ src/
+│ ├─ components/
+│ ├─ pages/
+│ ├─ Context/
+│ ├─ assets/
+│ ├─ App.jsx
+│ └─ main.jsx
+├─ index.html
+├─ package.json
+├─ vite.config.js
+└─ .env # created locally; not committed
 
-/api
-│── server.js # Express server entry point
-│── package.json
-│── .env # Environment variables (PORT, FAKE_TOKEN)
-│
-├── /data # JSON "database"
-│ ├── courses.json # Seeded course data (15–25 records)
-│ └── enrollments.json # Starts empty
-│
-├── /routes # API route definitions
-│ ├── courses.js
-│ └── enrollments.js
-│
-├── /controllers # Business logic
-│ ├── courseController.js
-│ └── enrollmentController.js
-│
-├── /middleware # Middleware utilities
-│ ├── authMiddleware.js # Token validation
-│ └── errorMiddleware.js # Error handler
-│
-└── /utils # Helper functions
-├── fileHandler.js # JSON read/write
-└── validators.js # Input validation
+yaml
+Copy
+Edit
 
-## ⚙️ Setup Instructions
+---
 
-1️⃣ Install Dependencies
+## 🧰 Prerequisites
+- **Node.js** 18 or newer (recommend LTS)
+- **npm** (or **pnpm**/**yarn**)
+- **Git**
+
+Check versions:
 ```bash
-cd api
+node -v
+npm -v
+🏁 Getting Started (Step-by-Step)
+1) Clone the repository
+bash
+Copy
+Edit
+git clone https://github.com/sagarkushwah043/Pro-lms-frontend.git
+cd Pro-lms-frontend
+2) Install dependencies
+bash
+Copy
+Edit
 npm install
+# or
+# pnpm install
+# yarn
+3) Configure environment variables
+Create a .env file in the project root (same level as package.json):
 
-2️⃣ Create .env file
+ini
+Copy
+Edit
+# API base URL (adjust to your backend URL or mock server)
+VITE_API_BASE_URL=http://localhost:4000
+In your code, you can read it via: import.meta.env.VITE_API_BASE_URL.
 
-PORT=4000
-FAKE_TOKEN=student-demo-token
-NODE_ENV=development
-
-
-3️⃣ Run Server
-
+4) Run the development server
+bash
+Copy
+Edit
 npm run dev
+Vite will print a local URL, typically: http://localhost:5173
 
-API will be available at:
-👉 http://localhost:4000
+5) Build for production
+bash
+Copy
+Edit
+npm run build
+This creates an optimized dist/ folder.
 
+6) Preview the production build (optional)
+bash
+Copy
+Edit
+npm run preview
+🔌 Mock API (Optional)
+If you don’t have a backend yet, you can use json-server for quick testing.
 
+Install globally or as a dev dependency:
 
-📌 API Endpoints
-🔑 Authentication
+bash
+Copy
+Edit
+npm i -D json-server
+Add a mock/db.json file (example):
 
-All routes require the header:
-
-Authorization: Bearer student-demo-token
-
-📚 Courses
-
-GET /api/courses
-Query params: page, limit, level, category, search, sort
-Example:
-
-GET /api/courses?page=1&limit=6&level=beginner&search=javascript
-
-GET /api/courses/:id
-Get single course by ID.
-
-(Optional) POST /api/courses
-Add a new course (basic validation).
-
-(Optional) PUT /api/courses/:id
-Update course details.
-
-🎓 Enrollments
-
-POST /api/enrollments
-
-{ "courseId": "c_101" }
-→ Enrolls student in the course.
-
-DELETE /api/enrollments/:id
-Unenroll from a course.
-
-🧪 Example Responses
-Success (GET /api/courses)
+json
+Copy
+Edit
 {
-  "data": [
-    { "id": "c_101", "title": "JS Basics", "level": "beginner", "category": "programming", "enrolled": false }
-  ],
-  "page": 1,
-  "limit": 6,
-  "total": 14
+  "courses": [],
+  "enrollments": []
 }
+Run the mock API:
 
-Success (POST /api/enrollments)
-{
-  "message": "Enrolled",
-  "enrollmentId": "e_555",
-  "courseId": "c_101"
-}
+bash
+Copy
+Edit
+npx json-server --watch mock/db.json --port 4000
+Ensure .env points to this port:
 
-Validation Error
-{ "error": "courseId is required" }
+ini
+Copy
+Edit
+VITE_API_BASE_URL=http://localhost:4000
+🧪 Useful Scripts
+Command	Description
+npm run dev	Start dev server (Vite)
+npm run build	Build production bundle
+npm run preview	Preview built app locally
+
+🌐 Deploy (Quick Notes)
+Vercel/Netlify: Framework = Vite, build = npm run build, output = dist
+
+GitHub Pages: Use a plugin or set SPA fallback. Make sure routes fall back to index.html.
+
+🐞 Troubleshooting
+Port in use: Change Vite port via vite.config.js or npm run dev -- --port 5174
+
+Blank page after deploy: Ensure SPA fallback to index.html
+
+API requests failing: Check VITE_API_BASE_URL and CORS on the backend
+
+📜 License
+MIT © 2025 Sagar Kushwah
+
+yaml
+Copy
+Edit
+
+---
+
+### How to add this README to your repo
+
+From your project root:
+
+```bash
+# 1) Create/overwrite README.md
+# (Open your editor and paste the markdown above, save as README.md)
+
+# 2) Commit & push
+git add README.md
+git commit -m "Add README with demo link and run steps"
+git push origin main
